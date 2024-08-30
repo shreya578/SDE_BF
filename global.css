@@ -1,13 +1,17 @@
+
+
 body {
   margin: 0;
   line-height: normal;
+  font-family: var(--font-poppins);
 }
 
+/* Root variables */
 :root {
-  /* fonts */
+  /* Fonts */
   --font-poppins: Poppins;
 
-  /* font sizes */
+  /* Font Sizes */
   --font-size-29xl: 48px;
   --font-size-19xl: 38px;
   --font-size-10xl: 29px;
@@ -60,8 +64,6 @@ body {
   --gap-6xl: 25px;
   --gap-xs: 25px;
   --gap-xl: 20px;
-  --gap-mid: 17px;
-  --gap-4xl: 23px;
   --gap-2xs: 11px;
   --gap-5xs: 8px;
 
@@ -110,7 +112,6 @@ body {
   --padding-10xl: 29px;
   --padding-lg: 18px;
   --padding-128xl: 147px;
-  --padding-xl: 20px;
   --padding-54xl: 73px;
   --padding-9xs: 4px;
   --padding-8xs: 5px;
@@ -119,6 +120,85 @@ body {
   --padding-4xs: 9px;
   --padding-7xs: 6px;
 
-  /* Border radiuses */
+  /* Border Radiuses */
   --br-3xs: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  :root {
+    --font-size-29xl: 40px;
+    --font-size-19xl: 32px;
+    --font-size-10xl: 24px;
+    --font-size-11xl: 26px;
+    --font-size-5xl: 20px;
+    --font-size-lg: 16px;
+    --font-size-lgi: 17px;
+    --font-size-13xl: 28px;
+    --font-size-3xl: 18px;
+    --font-size-xs: 10px;
+    --font-size-mini: 13px;
+    --font-size-smi: 11px;
+
+    --gap-2xl: 16px;
+    --gap-lg: 14px;
+    --gap-xl: 16px;
+    --gap-base: 14px;
+    --padding-xl: 16px;
+    --padding-2xl: 18px;
+    --padding-base: 14px;
+    --padding-lg: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-29xl: 32px;
+    --font-size-19xl: 28px;
+    --font-size-10xl: 20px;
+    --font-size-11xl: 22px;
+    --font-size-5xl: 18px;
+    --font-size-lg: 14px;
+    --font-size-lgi: 15px;
+    --font-size-13xl: 24px;
+    --font-size-3xl: 16px;
+    --font-size-xs: 8px;
+    --font-size-mini: 12px;
+    --font-size-smi: 10px;
+
+    --gap-2xl: 12px;
+    --gap-lg: 10px;
+    --gap-xl: 12px;
+    --gap-base: 10px;
+    --padding-xl: 14px;
+    --padding-2xl: 16px;
+    --padding-base: 10px;
+    --padding-lg: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-29xl: 24px;
+    --font-size-19xl: 20px;
+    --font-size-10xl: 16px;
+    --font-size-11xl: 18px;
+    --font-size-5xl: 16px;
+    --font-size-lg: 12px;
+    --font-size-lgi: 13px;
+    --font-size-13xl: 20px;
+    --font-size-3xl: 14px;
+    --font-size-xs: 6px;
+    --font-size-mini: 10px;
+    --font-size-smi: 8px;
+
+    --gap-2xl: 8px;
+    --gap-lg: 6px;
+    --gap-xl: 8px;
+    --gap-base: 6px;
+    --padding-xl: 12px;
+    --padding-2xl: 14px;
+    --padding-base: 6px;
+    --padding-lg: 12px;
+  }
 }
