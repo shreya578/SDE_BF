@@ -280,9 +280,6 @@ if (drhp22Button) {
       downloadFile('./files/drhp_file_22.pdf'); // Example file path for DRHP22
   });
 }
-  
-   
-  
     
 });
   
